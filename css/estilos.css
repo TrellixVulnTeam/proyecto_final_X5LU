@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #FFF !important;
+  text-decoration: none; }
+  header a:hover, header a:focus {
+    background-color: #FFF;
+    color: #000; }
+
+.headerIndex {
+  background-image: url(../images/portada.png);
+  height: 30rem;
+  background-position: center;
+  background-size: cover; }
+
+.headerCarta {
+  background-image: url(../images/portadacarta1.png);
+  height: 26rem;
+  background-position: center;
+  background-size: cover; }
+
+.headerNosotros {
+  background-image: url(../images/portadanosotros.png);
+  height: 26rem;
+  background-position: bottom;
+  background-size: cover; }
+
+.headerContacto {
+  background-image: url(../images/portadacontacto2.png);
+  height: 26rem;
+  background-position: center;
+  background-size: cover; }
+
+.headerSucursales {
+  background-image: url(../images/portadasucursales1.png);
+  height: 26rem;
+  background-position: center;
+  background-size: cover; }
+
+.titulosSitios {
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.9rem;
+  top: 20rem;
+  left: 0;
+  right: 0;
+  position: absolute; }
+
+.tituloIndex {
+  color: #FFF;
+  font-family: 'Zeyada', cursive;
+  font-weight: bold;
+  text-align: center;
+  font-size: 4.3rem;
+  top: 20rem;
+  left: 0;
+  right: 0;
+  position: absolute; }
+  @media all and (max-width: 768px) {
+    .tituloIndex {
+      font-size: 3rem;
+      top: 60%; } }
+
+.indexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.mainContainer p {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: center;
+  top: 50%;
+  margin-right: 20%;
+  margin-left: 20%;
+  margin-top: 3rem; }
+  @media all and (max-width: 768px) {
+    .mainContainer p {
+      font-size: 1rem; } }
+  .mainContainer p.animacionTextoIndex {
+    animation-duration: 2s;
+    animation-name: slidein; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 20%;
+    width: 100%; } }
+
+.filaImagenesIndex, .filaImagenesIndex .estiloImagenes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .filaImagenesIndex .estiloImagenes {
+    height: 300px;
+    width: 400px;
+    border-radius: 2%;
+    position: static;
+    background-position: center;
+    margin: 5rem;
+    transition: all 200ms ease-in-out; }
+    .filaImagenesIndex .estiloImagenes:hover {
+      transform: scale(1.1); }
+
+.textoNosotros {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000;
+  text-align: center; }
+
+.nosotrosBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.5rem; }
+
+.nosotrosBoxTextos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rem;
+  margin-right: 20rem; }
+
+.textos {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #000; }
+  @media all and (max-width: 768px) {
+    .textos {
+      font-size: 1rem; } }
+
+.titulos {
+  font-weight: bold;
+  font-size: 1.6rem;
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+  text-align: center; }
+
+.titulosSucursales {
+  font-weight: bold;
+  font-size: 1.7rem;
+  font-family: 'Oswald', sans-serif;
+  color: #000;
+  text-align: center;
+  margin: 4rem 1.5rem 4rem 1.5rem;
+  transition: width 2s, height 2s, transform 2s; }
+  @media all and (max-width: 768px) {
+    .titulosSucursales {
+      font-size: 2rem;
+      top: 60%; } }
+
+.sucursales {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; }
+
+.formulario {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+footer {
+  background-color: #000;
+  background-position: bottom;
+  margin-top: 3rem; }
+  footer .redes {
+    list-style: none;
+    text-align: left; }
+    footer .redes li {
+      display: inline-block;
+      margin: 0.8rem; }
+    footer .redes a {
+      text-decoration: none;
+      font-family: 'Oswald', sans-serif;
+      color: #FFF; }
