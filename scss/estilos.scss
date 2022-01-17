@@ -5,26 +5,27 @@
 	padding: 0;
 }
 header {
-	font-family: 'Oswald', sans-serif; 
-	font-weight: 400;
-	font-size: 1.5rem;
-	color: $header-footer-color !important;
-	text-decoration: none;
-	a{
-		&:hover,
-		&:focus{
-			background-color: $header-footer-color;
- 			color: #000;
-		}
-
+	 font-family: 'Oswald', sans-serif;
+ 	 font-size: 1.3rem;
+ 	 color: #FFF ;
+ 	 text-decoration: none; 
+	a{  
+		text-decoration: none; 
+		padding: 1rem;
+		font-size: 1 ren;
 	}
 }
-	.headerIndex{
-		background-image: url(../images/portada.png);
-		height: 30rem;
-		background-position: center;
-		background-size: cover;
-	}
+.rectanguloIndex {
+	height: 715px;
+	width: 25%;
+	background: #CDACA2;
+	background-position: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	align-items: flex-end;	
+}
+
 	.headerCarta {
 		background-image: url(../images/portadacarta1.png);
 		height: 26rem;
@@ -61,21 +62,94 @@ header {
 	    right: 0;
 	    position: absolute;
 }
+.estiloImagen{
+	position: absolute;
+	top: 5rem;
+	right: 10rem;
+}
 .tituloIndex{
-		color: $header-footer-color;
-	    font-family: 'Zeyada', cursive;
-	    font-weight: bold;
-	    text-align: center;
-	    font-size: 4.3rem;
-	    top: 20rem;
-	    left: 0;
-	    right: 0;
-	    position: absolute;
-		    @media all and ( max-width: $point-md ){
-		    	font-size: map-get($map,l);
-				top: 60%;
-			}
- }
+	position: absolute;
+	top: 14rem;
+	right: 32rem;
+	font-family: 'Zeyada', cursive;
+	font-size: 4.3rem;
+}
+.tituloIndex2{
+	position: absolute;
+	top: 17.5rem;
+	right: 35rem;
+	font-family: 'Zeyada', cursive;
+	font-size: 4.3rem;
+}
+.textIndex1{
+	font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #000;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  margin-top: 4rem;
+  }
+  .textIndex2{
+	font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #000;
+  letter-spacing: 0.15rem;
+  text-align: center;
+  margin-top: 5rem;
+  }
+
+.textIndex{
+	font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color:  #a18e89;
+  text-align: center;
+ 	margin-top: 2rem;
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+  .textIndex3{
+	font-family: 'Oswald', sans-serif;
+  font-size: 1.3rem;
+  color: #a18e89;
+  text-align: center;
+  }
+
+.contenedorGrid1{
+	margin-left: 6.5rem;
+	margin-bottom: 5rem;
+	display: grid;
+	grid-template-columns: repeat(3, 23rem);
+	gap: 1rem;
+	grid-template-areas: 	". . ."
+	". . .";
+
+
+}
+.estiloImagenesGrid{
+ width: 23rem;
+ height: 16rem;
+}
+.estiloImagenesGrid:hover{
+	transform: scale(1.1);
+}
+.contenedorGrid2{
+	margin-left: 6.5rem;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+		grid-template-areas: 	". . . ."
+		". . . ."
+		". . . .";
+	gap: 2rem;
+
+}
+.estiloImagenesGrid2{
+ width: 10rem;
+ height: 10rem;
+}
+
  .indexBox{
 	 	display: flex;
 	    justify-content: center;
@@ -111,25 +185,7 @@ header {
 						}
 				}
 }
- 	.filaImagenesIndex{
- 		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: center;
-		.estiloImagenes{
-			@extend.filaImagenesIndex;
-			height: 300px;
-		width: 400px;
-		border-radius: 2%;
-		position: static;
-		background-position: center;
-		margin: 5rem;
-		transition: all 200ms ease-in-out;
-		&:hover{
-			transform: scale(1.1);
-		}
-		}
- }
+ 	
 	.textoNosotros{
 		font-family: 'Oswald', sans-serif; 
 		font-weight: 300;
@@ -194,7 +250,9 @@ header {
    		
 	}
  footer{
- 	background-color: $mainColor;
+ 	background-color: #9cb35aed;
+ 	height: 10rem;
+	width: 100%;
 	background-position: bottom;
 	margin-top: 3rem;
 	.redes{
