@@ -7,47 +7,117 @@
     <meta name="keywords" content="saludable,gourmet,sano,restaurant,almuerzo,cena,healthy">
     <title>Carta</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-      <header>
-             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                 <a class="navbar-brand" href="index.html">
-                 <img src="images/logo2.png" alt="" width="110" height="98" class="d-inline-block align-text-top">
-                 </a>
-                 <div class="container-fluid">
-                        <button class="navbar-toggler" type="button"    data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                                 <div class="navbar-nav">
-                                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                                      <a class="nav-link" href="carta.html">Carta</a>
-                                      <a class="nav-link" href="sucursales.html">Sucursales</a>
-                                      <a class="nav-link" href="nosotros.html">Nosotros</a>
-                                      <a class="nav-link" href="contacto.html">Contacto</a>
-                                 </div>
-                             </div>
-                  </div>
-             </nav>
-            
-      </header>
-     <section class="container-fluid headerCarta">
-        <div class="indexBox">
-        <h1 class="titulosSitios">PROBA NUESTRO MENÚ</h1>
+     <header>
+            <div class="collapse" id="navbarToggleExternalContent">
+                 <div class="bg-dark p-4">
+                    <a class="text-white h4" href="index.html">Home</a> 
+                    <a class="text-white h4" href="nosotros.html">Nosotros</a>
+                    <a class="text-white h4" href="carta.html">Carta</a> 
+                    <a class="text-white h4" href="sucursales.html">Sucursales</a>
+                    <a class="text-white h4" href="contacto.html">Contacto</a>
+                 </div>
+           </div>
+                <nav class="navbar navbar-light bg-light" style="background-color: #e3f2fd">
+                        <div class="container-fluid">
+                             <button class="navbar-toggler" type="button"  data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                                    <form class="d-flex">
+                                          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                                                <button class="btn btn-outline-success" type="submit">Buscar</button>
+                                    </form>
+                      </div>
+              </nav>
+        </header>   
+        <section>
+                <div class="rectangulo mx-auto d-block">
+                    <h1 class="tituloSucursales">NUESTRO MENÚ</h1>
+                </div>
+                    <img class="imagenPortadaSucursales  float-end" src="images/carta.jpg" alt="ensaldas árabes">
+        </section>
+        <section>
+            <h2 class="tituloCarta1">LO MÁS ELEGIDO</h2>
+            <h3 class="tituloCarta2">Ensaladas</h3>
+                <div class="container">
+                    <div class="row">
+                         <div class="col centrar">
+                                <h1 class="ensaladaTitulo">ENSALADA CAESAR</h1>
+                                <h2 class="ingredientes">Pollo crispy, acompañado por lechugas frescas, tomates cherry, cebolla frita, queso grana padano y suave salsa César.</h2>
+                         </div>
+                         <div class="col">
+                                <img class="ensalada1" src="images/ensalada1.png" alt="ensalada caesar">
+                         </div>
+                    </div>
+                    <div class="row">
+                         <div class="col centrar">
+                                <h1 class="ensaladaTitulo">ENSALADA ORIGINAL</h1>
+                                <h2 class="ingredientes">Lechugas frescas, tomates cherry, choclo y pepino.</h2>
+                         </div>
+                   <div class="col">
+                                <img class="ensalada1" src="images/ensalada2.png" alt="ensalada original">
+                   </div>
+              </div>
+                    <div class="row">
+                         <div class="col centrar">
+                                <h1 class="ensaladaTitulo">ENSALADA INDIVIDUAL</h1>
+                                <h2 class="ingredientes">Lechugas frescas, tomates, choclo y pepino.</h2>
+                         </div>
+                         <div class="col">
+                                <img class="ensalada1" src="images/ensalada3.png" alt="ensalada individual">
+                        </div>
+                    </div>
+             </div>
+            <h3 class="tituloCarta2">Wrap</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col centrar">
+                            <h1 class="ensaladaTitulo">WRAP POLLO CRISPY</h1>
+                            <h2 class="ingredientes">Pollo crispy, acompañado por lechugas frescas, tomates, cebolla, mayonesa, tortilla y queso en fetas.</h2>
+                        </div>
+                    <div class="col">
+                            <img class="ensalada1" src="images/wrap.png" alt="wrap">
+                    </div>
+                </div>
+            </div>
+            <h3 class="tituloCarta2">Desayuno</h3>
+                <div class="container">
+                    <div class="row">
+                         <div class="col centrar">
+                                <h1 class="ensaladaTitulo">PANCAKE AVENA</h1>
+                                <h2 class="ingredientes">Deliciosos y esponjosos pancakes de avena acompañados de salasa de chocolate.</h2>
+                         </div>
+                    <div class="col">
+                                <img class="ensalada1" src="images/pancakes.png" alt="pancakes">
+                    </div>
+                </div>
+                <div class="row">
+                        <div class="col centrar">
+                                <h1 class="ensaladaTitulo">CAFÉ MACHIATTO</h1>
+                                <h2 class="ingredientes">Café cortado típico de Italia, consiste en un expreso con una pequeña cantidad de leche caliente y espumada.</h2>
+                        </div>
+                        <div class="col">
+                                <img class="ensalada1" src="images/cafe.png" alt="cafe">
+                        </div>
+               </div>
         </div>
-     </section>
-    
-    <div>
-        <img src="images/menurestaurant.jpg">
-    </div>
-    <footer>
-        <ul class="redes">
-           <li><a href="http://www.facebook.com/" target="_blank">Facebook</a></li>
-           <li><a href="http://www.instagram.com/" target="_blank">Instagram</a></li>
-        </ul>
-     </footer>
+</section>
+        <footer class="footerMargin">
+            <h1>NATURE HUNTERS</h1>
+                <img src="images/footer.png" alt="flores">
+            <h2>Seguinos en</h2>
+                <ul class="redes">
+                   <li><a href="http://www.facebook.com/" target="_blank">Facebook</a></li>
+                   <li>|</li>
+                   <li><a href="http://www.instagram.com/" target="_blank">Instagram</a></li>
+                   <li>|</li>
+                   <li><a href="http://www.twitter.com/" target="_blank">Twitter</a></li>
+                </ul>
+    </footer>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
