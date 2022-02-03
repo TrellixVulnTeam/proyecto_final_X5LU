@@ -1,5 +1,4 @@
 @import "variables";
-@import "tools";
 *{
 	margin: 0;
 	padding: 0;
@@ -12,56 +11,30 @@ header {
 	a{  
 		text-decoration: none; 
 		padding: 1rem;
-		font-size: 1 ren;
+		font-size: 1rem;
+			@media all and (max-width: $point-md){ 
+			display: flex;
+			flex-direction: column;
+	  	}
 	}
 }
 /*empieza INDEX*/
 .rectanguloIndex{
-	height: 715px;
+	height: 675px;
 	width: 25%;
 	background: $paleta1;
-	background-position: right;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-end;	
+	position: absolute;	
+	@media all and (max-width: $point-md){ 
+		height: 200px;
+	}
 }
 .estiloImagen{
-	position: absolute;
-	top: 8.5rem;
-	right: 10rem;
-}
-.tituloIndex{
-	position: absolute;
-	top: 16rem;
-	right: 32rem;
-	font-family: 'Zeyada', cursive;
-	font-size: 4.3rem;
-}
-.tituloIndex2{
-	position: absolute;
-	top: 19.5rem;
-	right: 35rem;
-	font-family: 'Zeyada', cursive;
-	font-size: 4.3rem;
-}
-.tituloIndex3{
-	position: absolute;
-	top: 35rem;
-	right: 45rem;
-	font-family: 'Oswald', sans-serif;
-	color: #000;
-	letter-spacing: 0.15rem;
-	font-size: 1.3rem;
-}
-.tituloIndex4{
-	position: absolute;
-	top: 38rem;
-	right: 40rem;
-	font-family: 'Oswald', sans-serif;
-	color: #000;
-	letter-spacing: 0.15rem;
-	font-size: 1.3rem;
+	width: 75%;
+	@media all and (max-width: $point-md){ 
+		width: 300px;
+		height: 200.1px;
+		margin-right: 3rem;
+	}
 }
 .textIndex1{
 	font-family: 'Oswald', sans-serif;
@@ -70,9 +43,12 @@ header {
   color: #000;
   letter-spacing: 0.15rem;
   text-align: center;
-  margin-top: 4rem;
+  margin-top: 48rem;
+  	@media all and (max-width: $point-md){ 
+  		margin-top: 3rem;
+  	}
   }
-  .textIndex2{
+.textIndex2{
 	font-family: 'Oswald', sans-serif;
   font-weight: bold;
   font-size: 1.3rem;
@@ -90,6 +66,9 @@ header {
  	margin-top: 2rem;
   margin-right: 7rem;
   margin-left: 7rem;
+  	@media all and (max-width: $point-md){ 
+  		font-size: 1rem;
+  	}
 }
 .textIndex3{
 	font-family: 'Oswald', sans-serif;
@@ -109,34 +88,20 @@ header {
 	font-size: 4rem;
 	color: #000;
 }
-.contenedorGrid1{
-	margin-left: 6.5rem;
-	margin-bottom: 5rem;
-	display: grid;
-	grid-template-columns: repeat(3, 23rem);
-	gap: 1rem;
-	grid-template-areas: 	". . ."
-	". . .";
+.containerIndex{
+  margin-left: 7rem;
+  margin-top: 4rem;
+ }
+.platosIndex {
+  padding-left: 0rem !important;
+  padding-bottom: 1rem;
 }
 .estiloImagenesGrid{
  width: 23rem;
  height: 16rem;
-}
-.estiloImagenesGrid:hover{
-	transform: scale(1.1);
-}
-.contenedorGrid2{
-	margin-left: 6.5rem;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-areas: 	". . . ."
-		". . . ."
-		;
-	gap: 1.5rem;
-	justify-content: center;
-}
-.contenedorGrid2 button{
-	margin-left: 1.2rem;
+ 		&:hover{
+ 	 			transform: scale(1.1);
+ 		}
 }
 .estiloImagenesGrid2{
  width: 10rem;
@@ -153,42 +118,67 @@ header {
 .formulario{
 	position: relative;
 	width: 50%;
-	margin-top: 22rem;
+	margin-top: 3rem;
 	margin-left: 2rem;
+		input{
+			background-color: #9cb35aa8!important;
+	}
+		label{
+			display: block;
+   		margin-bottom: 0.5rem;
+    	margin-top: 0.5rem;
+		}
+		textarea{
+			background-color: #9cb35aa8 !important;
+		}
+		button{
+			margin-top: 0.5rem;
+			border-radius: 20px !important;
+		}
+		@media all and (max-width: $point-md){
+			width: 80%;
+		}
 }
 .tituloContacto{
-		font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
   font-size: 1.3rem;
   color: #000;
   letter-spacing: 0.15rem;
   text-align: center;
   margin-top: 18rem;
   margin-left: 2rem;
-  position: absolute;
+  position: static;
+  	@media all and (max-width: $point-md){
+  		font-size: 0.9rem;
+    	padding-top: 1rem;
+    	position: static;
+  	}
 }
-.circulo{
-	margin-left: 10rem;
-  width: 400px;
-  height: 400px;
-  border-radius: 50%;
+.rectanguloContacto{
+	margin-top: 8rem;
+  width: 100%;
+  height: 300px;
   background-color: $paleta1;
-  position: absolute;
+  &:hover{
+  	transform: scale(1.1);
+  }
 }
-.circulo:hover{
-	transform: scale(1.1);
-}
-.circulo img{
+.rectanguloContacto img{
+	display: block;
 	width: 80px;
 	height: 80px;
-	margin-left: 10rem;
+	margin: auto;
 }
 .textoContacto{
 	font-family: 'Zeyada', cursive; 
 	font-weight: 300;
 	font-size: 3.2rem;
 	color: #000;
-	margin-top: 5rem;
-	margin-left: 7.8rem;
+	padding-top: 1rem;
+	text-align: center;
+		@media all and (max-width: $point-md){
+			font-size: 2rem;
+  }
 }
 .textoContacto2{
 	font-family: 'Oswald', sans-serif; 
@@ -196,7 +186,15 @@ header {
 	font-size: 2rem;
 	color: #000;
 	margin-top: 3rem;
-	margin-left: 7.8rem;
+	text-align: center;
+}
+.containerContacto{
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: row;
+  	@media all and (max-width: $point-md){
+  		flex-direction: column;
+	  }
 }
 /*Termina contacto*/
 /*Empieza sucursales*/
@@ -213,7 +211,6 @@ header {
 }
 .imagenPortadaSucursales{
 	width: 40%;
-
 }
 .tituloSucursales2{
 	font-family: 'Oswald', sans-serif;
@@ -242,25 +239,29 @@ header {
   letter-spacing: 0.15rem;
   text-align: center;
   padding: 1rem;
-  }
+  @media all and (max-width: $point-md){ 
+  	font-size: 0.8rem;
+	  text-align: left;
+	  padding: 0.2rem;
+	  text-align: center;
+	  }
+ }
 .rectanguloSucursales{
   background-color: $paleta3;
 	height: 4rem;
-	width: 60%;
+	width: 100%;
 	margin-top: 3rem;
 }
 .estilosIframes{
- 	margin-left: 13rem !important;
- 	margin-top: 3rem;
+ 	margin-left: 13rem;
+ 	@media all and (max-width: $point-md){ 
+ 		margin-left: 1rem;
+   }
 }
-.rectanguloSucursales2{
-  background: $paleta1;
-	height: 4rem;
-	width: 40%;
-	margin-top: 45rem;
-	position: absolute;
-	background-position: left;
- }
+.containerSucursales{
+    display: flex;
+    flex-direction: column;
+  }
 .triangulo{
   	 width: 0;
      height: 0;
@@ -268,7 +269,13 @@ header {
      border-top: 200px solid transparent;
      border-left: 200px solid transparent;
      border-bottom: 200px solid  $paleta1;
-    margin-top: 3rem;  
+     margin-top: 3rem;  
+     @media all and (max-width: $point-md){
+	     	border-right: 100px solid  #CDACA2;
+	     border-top: 100px solid transparent;
+	     border-left: 100px solid transparent;
+	     border-bottom: 100px solid  #CDACA2;
+			}
  }
 /*Termina sucursales*/
 /*Empieza nosotros*/
@@ -281,24 +288,34 @@ header {
   text-align: center;
   margin-top: 20rem;
   margin-left: 20rem;
-  position: absolute;
-  }
+  @media all and (max-width: $point-md){
+  	margin-left: 0rem;
+  	text-align: center;
+  	}
+}
 .tituloNosotros{
-	position: absolute;
-	margin-top: 22rem;
 	margin-left: 22rem;
 	font-family: 'Zeyada', cursive;
 	font-size: 4rem;
+		@media all and (max-width: $point-md){
+			margin-left: 0rem;
+  		text-align: center;
+		}
 }
 .textNosotros{
 	font-family: 'Oswald', sans-serif;
   font-size: 1.5rem;
   color:  $paleta2;
   text-align: center;
- 	margin-top: 25rem;
   margin-left: 2rem;
   margin-right: 30rem;
   padding-top: 1rem;
+  	@media all and (max-width: $point-md){
+			text-align: center;
+		  margin-left: 2rem;
+		  margin-right: 1rem;
+		  padding-top: 1rem;
+    }
 }
 .textNosotros2{
 	font-family: 'Oswald', sans-serif;
@@ -306,14 +323,19 @@ header {
   color:  #000;
   text-align: left;
  	margin-top: 9rem;
-  margin-left: 30rem;
   margin-right: 2rem;
   padding-top: 1rem;
-  position: absolute;
+  padding-left: 4rem;
+}
+.containerNosotros{
+  display: flex;
+  flex-direction: row;
+  	@media all and (max-width: $point-md){
+  			flex-direction: column;
+  		}
 }
 .imagenNosotros{
   	padding-left: 4rem;
-  	position: absolute;
   	margin-top: 5rem;
   	transition: 1s;
  		&:hover{
@@ -326,9 +348,12 @@ header {
  	border: 7px solid $paleta2;
  	width: 70%;
  	height: 14rem;
- 	margin-top: 34rem;
+ 	margin-top: 6rem;
  	margin-right: 15%;
  	margin-left: 15%;
+ 		@media all and (max-width: $point-md){
+ 			 display: none!important;
+    }
  }
 .textoRecuadro{
  	font-family: 'Oswald', sans-serif;
@@ -367,6 +392,7 @@ iframe{
   color: $paleta3;
   letter-spacing: 0.15rem;
 }
+.ocultar{}
 .ingredientes{
 	font-family: 'Oswald', sans-serif;
   font-size: 1rem;
@@ -379,43 +405,43 @@ footer{
 	height: 13rem;
 	width: 100%;
 	display: inline-block;
-  h1{
-	font-family: 'Oswald', sans-serif;
-  font-size: 1.7rem;
-  color: #000;
-  letter-spacing: 0.15rem;
-  text-align: left;
-  margin-top: 6rem;
-  margin-left: 5rem;
-  position: absolute;
-}
-	h2{
-	font-family:'Oswald', sans-serif;
-	color: #000;
-	font-size: 1.2rem;
-	text-align: right;
-	margin-right: 8rem;
-}
-.redes{
-	list-style: none;
-	text-align: right;
-	color: #FFF;
-	font-size: 1.2rem;
-	li{
-	display: inline-block;
-	margin: 0.8rem;
-	a{
- 	text-decoration: none;
- 	font-family:'Oswald', sans-serif;
-  color: #FFF;
-}
-}
-}
-img{
-	width: 135px;
-	height: 89.7px;
-	margin-top: 2rem;
-}
+	  h1{
+				font-family: 'Oswald', sans-serif;
+			  font-size: 1.7rem;
+			  color: #000;
+			  letter-spacing: 0.15rem;
+			  text-align: left;
+			  margin-top: 6rem;
+			  margin-left: 5rem;
+			  position: absolute;
+			}
+	 h2{
+				font-family:'Oswald', sans-serif;
+				color: #000;
+				font-size: 1.2rem;
+				text-align: right;
+				margin-right: 8rem;
+			}
+	.redes{
+				list-style: none;
+				text-align: right;
+				color: #FFF;
+				font-size: 1.2rem;
+					li{
+							display: inline-block;
+							margin: 0.8rem;
+								a{
+									 	text-decoration: none;
+									 	font-family:'Oswald', sans-serif;
+									  color: #FFF;
+									}
+						}
+				}
+		img{
+			width: 135px;
+			height: 89.7px;
+			margin-top: 2rem;
+		}
 }
 .footerMargin{
 	margin-top: 10rem;
@@ -424,24 +450,23 @@ img{
 	margin-top: 33rem;
 }
 @media all and (max-width: $point-md){
-	header a{ 
-		display: flex;
-		flex-direction: column;
-		font-size: 1rem;
-	}
-	.rectanguloIndex{
-		height: 200px;
-	}
-	.estiloImagen{
-		width: 300px;
-		height: 200.1px;
-		margin-right: 3rem;
-	}
-	.textIndex{
-		font-size: 1rem;
-	}
-	p{
-		font-size: 1rem;
-	}
+	
+		.ocultar{
+  			display: none !important;
+						}
+		h1{
+    font-size: 0.5rem;
+  }
+  .tituloContacto{
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    position: static;
+
+  }
+  .tituloSucursales{
+    text-align: left;
+    margin-left: 1rem;
+    font-size: 1.9rem;
+  }
 	}
  
